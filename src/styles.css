@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+html,body{
+  padding:0;
+  margin:0;
+}
+
+.page{
+  margin:0 auto;
+  width:1200px;
+}
+
+[cb-component]:not(.start){
+  border:1px solid #ccc;
+  background: green;
+  display:flex;
+  padding:5px;
+  min-height: 20px;
+  margin:5px;
+}

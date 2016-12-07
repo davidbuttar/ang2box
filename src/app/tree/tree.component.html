@@ -1,0 +1,7 @@
+<div
+  [ngStyle]="dir.setStyles()"
+  cb-component
+  [domElements]="dir.domElements"
+  *ngFor="let dir of domElements"
+  (click)="dir.toggle($event); $event.stopPropagation()">
+</div>
